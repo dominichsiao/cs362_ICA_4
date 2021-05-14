@@ -1,23 +1,17 @@
 def main():
-	calc(4,6)
-	calc(5,9)
+	word = input("Please enter a sentence: ")
+	count(word)
 
+def count(word):
+	x = word.split()
+	length = len(x)
+	
+	print(length)
+	return length
 
-def add(a, b):
-	add = a + b
-	return(add)
-
-def sub(a, b):
-	sub = a - b
-	return(sub)
-
-def mul(a, b):
-	mul = a * b
-	return(mul)
-
-def div(a, b):
-	div = a / b
-	return(div)
+#def main():
+	#word = input("Please enter a sentence")
+	#print(count(word)
 
 if __name__ == "__main__":
 	main()
